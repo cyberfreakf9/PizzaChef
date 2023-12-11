@@ -1,0 +1,580 @@
+* {
+  padding: 0;
+  margin: 0;
+  --bg-top-hear: #5d78c7;
+}
+html a {
+  text-decoration: none;
+  color: black;
+}
+html a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+header {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-top-hear);
+}
+.top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 5px;
+  align-items: center;
+  height: 40px;
+  color: white;
+}
+.top-header a {
+  color: white;
+  text-decoration: none;
+}
+.top-header a:hover {
+  color: white;
+}
+.top-header a:hover {
+  text-decoration: underline;
+}
+/* Bottom Header */
+.bottom-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  /* background-color: #f0c7c7; */
+  margin: 0 auto;
+  padding: 0 5px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.logo img {
+  width: 250px;
+  height: 80px;
+}
+.logo span {
+  /* background-color: white; */
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  /* border: 1px solid green; */
+  height: 82px;
+  z-index: 1;
+}
+.hamberger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  background-color: rgb(45, 38, 38);
+  border-radius: 5px;
+  color: white;
+  display: none;
+}
+/* Navbar */
+navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+navbar ul li {
+  padding: 2px 20px;
+}
+navbar ul li:hover {
+  background-color: lightgray;
+  opacity: 0.8;
+  color: blue;
+  cursor: pointer;
+  line-height: 50px;
+  transition: all 0.8s;
+}
+navbar .btn {
+  margin-left: 5px;
+  padding: 9px 20px;
+  background-color: #5d78c7;
+  border-radius: 5px;
+  color: white;
+}
+navbar .btn:hover {
+  background-color: #4162c7;
+  cursor: pointer;
+  color: white;
+}
+.active {
+  background-color: lightgray;
+  opacity: 0.8;
+  line-height: 50px;
+}
+/* Slick Slides */
+.slick-slides {
+  width: 100%;
+}
+.slick-slides div {
+  height: 600px;
+  width: 100;
+}
+.slick-container {
+  width: 100%;
+  position: relative;
+}
+.location {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  margin-left: 10%;
+  width: 80%;
+  height: 50px;
+  background-color: #6b75ab;
+  opacity: 0.8;
+  color: white;
+}
+.whatsup,
+.our-shops,
+.our-varities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border-right: 1px solid white;
+}
+.wp-heading,
+.our-heading,
+.varities-heading {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+/*------------Slick Slider Code Start--------*/
+
+.slick-left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 5;
+}
+.slick-left > span {
+  color: white;
+  opacity: 0.3;
+}
+.slick-left > span:hover {
+  opacity: 0.9;
+}
+.slick-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 5;
+}
+.slick-right > span {
+  color: white;
+  opacity: 0.3;
+}
+.slick-right > span:hover {
+  opacity: 0.9;
+}
+.slick-slide {
+  margin: 0px 2px;
+}
+
+.slick-slide img {
+  width: 900px;
+  height: 400px;
+}
+.slick-next {
+  padding: 25px 25px;
+  border-radius: 100%;
+  background-color: rgb(231, 31, 31);
+}
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  padding: 20px 5px;
+  border-radius: 100%;
+  background-color: rgb(68, 42, 42);
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+/*------------Slick Slider Code End---------*/
+/*--------------Flavour------------------*/
+.flavour-container {
+  text-align: center;
+  width: 100%;
+}
+.flavour-items {
+  display: flex;
+  width: inherit;
+}
+.flavour-list-left {
+  position: relative;
+  width: 25%;
+  text-align: end;
+}
+.side-icon,
+.side-icon-two,
+.side-icon-three,
+.right-side-icon,
+.right-side-icon-two,
+.right-side-icon-three {
+  position: relative;
+}
+.side-icon > span,
+.side-icon-two > span,
+.side-icon-three > span {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin-left: 50px;
+  color: rgb(107, 117, 171);
+}
+.right-side-icon > span,
+.right-side-icon-two > span,
+.right-side-icon-three > span {
+  position: absolute;
+  top: 50%;
+  margin-left: -70px;
+  display: inline-block;
+  color: rgb(107, 117, 171);
+}
+.flavour-list-right {
+  width: 25%;
+  text-align: start;
+}
+.falvour-img {
+  width: 50%;
+}
+.falvour-img img {
+  height: 300px;
+}
+/*--------Main Center-------------*/
+.main-center {
+  position: relative;
+  height: 300px;
+  background: url('/images/background.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+.main-center h2 {
+  padding: 20px 0;
+  font-size: 28px;
+}
+.main-center button {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+}
+.main-center button:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid blue;
+  opacity: 0.3;
+}
+/*-------- Pizza Deals ----------- */
+.pizza-deals > h1,
+.pizza-deal > h2 {
+  text-align: center;
+}
+.pizza-deals {
+  margin: 0 auto;
+  width: 80%;
+}
+.deal-list {
+  margin-top: 50px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.pizza-deal img {
+  width: 90%;
+}
+.pizza-deals > div img:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s ease-in-out;
+}
+/*---------Footer---------*/
+footer {
+  /* height: 500px; */
+  padding-top: 90px;
+  padding-bottom: 50px;
+  background-color: #242424;
+}
+.footer-grid {
+  width: 80%;
+  height: inherit;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.grid-item1 {
+  margin: auto auto;
+  width: 100%;
+  height: 400px;
+  background: url('/images/footer-one.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.grid-item2 {
+  margin: auto auto;
+  width: 90%;
+  height: 400px;
+  /* background: url('/images/footer-one.jpg'); */
+  color: white;
+}
+.grid-item2 > p {
+  line-height: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+.grid-item3 {
+  margin: auto auto;
+  width: 90%;
+  height: 400px;
+  background: url('/images/map-one.jpg');
+  background-position: center;
+  background-size: cover/center;
+  color: white;
+}
+.grid-item4 {
+  margin: auto auto;
+  width: 90%;
+  height: 400px;
+  background: url('/images/map-two.jpg');
+  background-position: center;
+  background-size: cover/center;
+  color: white;
+}
+.grid-title {
+  position: absolute;
+  display: inline-block;
+  margin-top: -40px;
+  font-size: 20px;
+  font-weight: 700;
+}
+/*--------Footer Bottom----------*/
+.footer-bottom {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+  color: white;
+  text-align: center;
+  line-height: 0.4rem;
+}
+/*-----------CHEF-SUPREME-BACKGROUND-CODE-----------*/
+.checf-supreme-bkg {
+  position: relative;
+  margin: auto auto;
+  width: 100%;
+  height: 350px;
+  background: url('/images/pizza-check-bkg.jpg');
+  background-position: center;
+  background-size: cover/center;
+  background-attachment: fixed;
+  color: white;
+}
+.heading-top,
+.sub-heading {
+  position: absolute;
+  top: 82%;
+  left: 10%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+}
+.sub-heading {
+  top: 90%;
+  font-size: 1rem;
+}
+.sub-heading a {
+  text-decoration: none;
+  color: white;
+}
+.ingridients {
+  padding-left: 150px;
+}
+/*------------MENU-CODE-HERE---------------*/
+.pizza-list {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.pizza-detais {
+  height: 400px;
+  text-align: center;
+}
+.piza-detai1 {
+  /* background: url('/images/hotnspicy.png') no-repeat center; */
+}
+/*--------DEAL CODE------------------*/
+.deals-list {
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.deal-detais img {
+  width: 90%;
+}
+/*-------ABOUT US-------------*/
+.about {
+  width: 80%;
+  margin: 30px auto;
+}
+.contact {
+  width: 80%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 20px;
+}
+@media (max-width: 767px) {
+  .hamberger {
+    display: block;
+  }
+  .bottom-header {
+    display: 90%;
+    padding-left: 50px;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 50%;
+  }
+  .hamberger {
+    /* width: 30%; */
+    padding: 3px;
+  }
+  .top-header {
+    flex-direction: column;
+    height: 70px;
+    padding: 9px;
+  }
+  /* Hide navbar */
+  navbar {
+    display: none;
+  }
+  .location {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    height: 200px;
+  }
+  .whatsup,
+  .our-shops,
+  .our-varities {
+    width: 100%;
+    padding: 0 20px;
+    margin: 10px auto;
+  }
+  .whatsup > span,
+  .our-shops > span,
+  .our-varities > span {
+    display: inline-block;
+    padding-right: 20px;
+    width: 12%;
+    font-size: 16px;
+    color: yellow;
+  }
+  .wp-heading,
+  .our-heading,
+  .varities-heading {
+    width: 70%;
+  }
+  .falvour-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .falvour-img img {
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .flavour-list-left,
+  .flavour-list-right {
+    width: 100%;
+    text-align: center;
+  }
+  .flavour-items {
+    flex-direction: column;
+  }
+  .main-center button {
+    left: 37%;
+  }
+  .deal-list {
+    grid-template-columns: 1fr;
+  }
+  .pizza-deals {
+    width: 100%;
+  }
+  .footer-grid {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
+  .grid-item2,
+  .grid-item3,
+  .grid-item4 {
+    margin-top: 40px;
+  }
+  .grid-item3,
+  .grid-item4 {
+    width: 99%;
+  }
+  .footer-grid {
+    width: 90%;
+  }
+  .ingridients {
+    padding-left: 120px;
+  }
+  .pizza-list {
+    grid-template-columns: 1fr;
+  }
+  .deals-list {
+    width: 99%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+  .deal-detais {
+    width: 99%;
+  }
+  .contact {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  iframe {
+    width: 98%;
+  }
+}
